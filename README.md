@@ -1,8 +1,20 @@
-# Getting Started with Create React App
+# Easier to use version of the MMS quicklook plots
+
+## Requirements
+
+This project requires a recent version of node and npm, i.e.
+
+`node >= v14.15.4`
+
+`npm >= 6.14.10`
+
+To run the python webserver, python>=3.8.5 is recommended (untested on other versions), along with a compatible version of `pip`.
+
+The required modules are: flask, numpy, tinydb & pybowshock (to get estimated shock normals (note: must be installed in site_packages))
+
+## NPM Options
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
 
 In the project directory, you can run:
 
