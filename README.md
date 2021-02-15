@@ -1,5 +1,36 @@
 # Easier to use version of the MMS quicklook plots
 
+## Contents
+
+- [Easier to use version of the MMS quicklook plots](#easier-to-use-version-of-the-mms-quicklook-plots)
+  * [Requirements](#requirements)
+  * [Starting the server](#starting-the-server)
+  * [How to Use](#how-to-use)
+    + [ADD](#add)
+      - [Picture window](#picture-window)
+      - [Control Panel](#control-panel)
+    + [EXPLORE](#explore)
+  * [Python Backend](#python-backend)
+    + [127.0.0.1:5000/](#127001-5000-)
+    + [127.0.0.1:5000/shock_crossing](#127001-5000-shock-crossing)
+      - [GET shock_crossing](#get-shock-crossing)
+      - [POST shock_crossing](#post-shock-crossing)
+    + [127.0.0.1:5000/get_estimated_shock_normal (GET)](#127001-5000-get-estimated-shock-normal--get-)
+  * [NPM Options](#npm-options)
+    + [`npm start`](#-npm-start-)
+    + [`npm test`](#-npm-test-)
+    + [`npm run build`](#-npm-run-build-)
+    + [`npm run eject`](#-npm-run-eject-)
+  * [Learn More](#learn-more)
+    + [Code Splitting](#code-splitting)
+    + [Analyzing the Bundle Size](#analyzing-the-bundle-size)
+    + [Making a Progressive Web App](#making-a-progressive-web-app)
+    + [Advanced Configuration](#advanced-configuration)
+    + [Deployment](#deployment)
+    + [`npm run build` fails to minify](#-npm-run-build--fails-to-minify)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## Requirements
 
 This project requires a recent version of node and npm, i.e.
