@@ -180,7 +180,7 @@ export default function ConfigPanel({ getImgURL, event, handleSetEvent }) {
         </Grid>
       </Grid>
       {event == null ? (
-        <p>Select an event before you can see it's information.</p>
+        <p>Select an event before you can see its information.</p>
       ) : (
         <Fragment>
           <Grid container align="center">
