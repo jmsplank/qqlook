@@ -4,11 +4,12 @@ import { Button, Grid } from "@material-ui/core";
 import "./App.css";
 
 import Add from "./pages/Add";
+import Explore from "./pages/Explore";
 
 export default function App() {
   return (
     <Router>
-      <Grid container style={{ padding: 5 }}>
+      <Grid container style={{ padding: 5 }} justify="space-evenly">
         <Grid item align="center" xs={4}>
           <Button component={Link} color="default" to="/" variant="contained">
             Home
@@ -37,11 +38,13 @@ export default function App() {
       </Grid>
 
       <Switch>
+        <Route exact path="/"></Route>
         <Route path="/add">
           <Add />
         </Route>
-        <Route path="/explore"></Route>
-        <Route path="/"></Route>
+        <Route path="/explore">
+          <Explore />
+        </Route>
       </Switch>
     </Router>
   );
