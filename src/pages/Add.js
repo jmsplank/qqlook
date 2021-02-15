@@ -36,22 +36,28 @@ export default function Add() {
           </Typography>
         </Grid>
       </Grid>
-      <Grid container justify="space-evenly">
-        <Grid item xs={8}>
-          <Quicklook
-            imgURL={imgURL}
-            getImgURL={getImgURL}
-            twoH={twoH}
-            imgDate={imgDate}
-            handleSetEvent={handleSetEvent}
-          />
+      <div>
+        <Grid container justify="flex-end">
+          <Grid item xs={8}>
+            <Quicklook
+              imgURL={imgURL}
+              getImgURL={getImgURL}
+              twoH={twoH}
+              imgDate={imgDate}
+              handleSetEvent={handleSetEvent}
+            />
+          </Grid>
+          <Grid item xs={4}>
+            <Paper style={{ padding: 16, margin: 16 }}>
+              <ConfigPanel
+                getImgURL={getImgURL}
+                event={event}
+                handleSetEvent={handleSetEvent}
+              />
+            </Paper>
+          </Grid>
         </Grid>
-        <Grid item xs={4}>
-          <Paper style={{ padding: 16, margin: 16 }}>
-            <ConfigPanel getImgURL={getImgURL} event={event} />
-          </Paper>
-        </Grid>
-      </Grid>
+      </div>
     </Fragment>
   );
 }
